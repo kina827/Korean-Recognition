@@ -139,3 +139,4 @@ cython_debug/
 
 # Train and Test Images
 image-data/
+MNIST/
