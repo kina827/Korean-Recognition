@@ -139,5 +139,5 @@ cython_debug/
 
 # Train and Test Images
 image-data/
-image-data-256/
+Image-data-256/
 MNIST/
