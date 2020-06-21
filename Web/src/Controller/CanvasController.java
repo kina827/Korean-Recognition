@@ -1,4 +1,5 @@
 package Controller;
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.stream.Collectors;
@@ -49,10 +50,16 @@ public class CanvasController extends HttpServlet {
 	}
 	protected void uploadImage(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String test = request.getReader().lines().collect(Collectors.joining(System.lineSeparator()));
-	    System.out.print(test);
+	    //System.out.println(test);
 	    byte[] bImg64 = test.getBytes();
 	    byte[] bImg = Base64.decodeBase64(bImg64);
-	    FileOutputStream fos = new FileOutputStream("C:\\Users\\LKina\\Documents\\GitHub\\Korean-Recognition\\Python\\image-data\\user-input\\img.png");
+	    File folder = new File("C:\\Users\\LKina\\Documents\\GitHub\\Korean-Recognition\\Python\\image-data\\user-input\\");
+	    File[] listOfFiles = folder.listFiles();
+	    String PATH = "C:\\Users\\LKina\\Documents\\GitHub\\Korean-Recognition\\Python\\image-data\\user-input\\img";
+	    System.out.println("PATH: " + PATH);
+	    System.out.println("listOFFiles: " + listOfFiles.length);
+	    System.out.println(PATH + listOfFiles.length + ".png");
+	    FileOutputStream fos = new FileOutputStream( PATH + listOfFiles.length + ".png");
 	    fos.write(bImg);
 	    fos.close();
 	}
