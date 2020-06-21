@@ -24,18 +24,22 @@
             canvas.addEventListener("mousemove", listener);
             canvas.addEventListener("mouseup", listener);
             canvas.addEventListener("mouseout", listener);
+            canvas.addEventListener("touchstart", listener);
+            canvas.addEventListener("touchmove", listener);
+            canvas.addEventListener("touchend", listener);
         }
         function listener(event){
             switch(event.type){
-                case "mousedown":
+	            case "touchstart":
+	            case "mousedown":
                     initDraw(event);
                     break;
-
+	            case "touchmove":
                 case "mousemove":
                     if(pos.drawable)
                         draw(event);
                     break;
-
+                case "touchend":
                 case "mouseout":
                 case "mouseup":
                     finishDraw();
