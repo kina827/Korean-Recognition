@@ -10,7 +10,7 @@
 
 /fonts/ 디렉토리에는 데이터 생성에 사용되는 폰트 파일이 있습니다. 데이터 생성에는 아래의 8가지 폰트를 사용하였습니다.
 
-![fonts.png](https://github.com/kusakina0608/Korean-Recognition/blob/master/img/fonts.png?raw=true)
+![fonts.png](https://github.com/kusakina0608/Korean-Recognition/blob/master/Python/img/fonts.png?raw=true)
 
 /labels/ 디렉토리에는 자주 사용하는 한글 문자의 레이블이 나열되어 있는 txt 파일이 있습니다.
 
