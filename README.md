@@ -14,7 +14,7 @@
 
 /labels/ 디렉토리에는 자주 사용하는 한글 문자의 레이블이 나열되어 있는 txt 파일이 있습니다.
 
-[korean-image-generator.ipynb](https://github.com/kusakina0608/Korean-Recognition/blob/master/tools/korean-image-generator.ipynb) 파일은 폰트 파일과 텍스트 파일을 사용하여 학습에 사용될 데이터를 생성합니다.
+[korean-image-generator.ipynb](https://github.com/kusakina0608/Korean-Recognition/blob/master/Python/tools/korean-image-generator.ipynb) 파일은 폰트 파일과 텍스트 파일을 사용하여 학습에 사용될 데이터를 생성합니다.
 
 
 
